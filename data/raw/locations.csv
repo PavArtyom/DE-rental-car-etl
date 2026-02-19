@@ -1,0 +1,16 @@
+location_id,city,address,phone,opening_hours,is_active
+1,Vitebsk,"Street 4, Building 48",+375295614226,08:00-20:00,true
+2,Borisov,"Street 18, Building 48",+375292719583,08:00-20:00,true
+3,Novopolotsk,"Street 55, Building 3",+375291499914,08:00-20:00,true
+4,Baranovichi,"Street 30, Building 33",+375291445199,08:00-20:00,true
+5,Polotsk,"Street 54, Building 15",+375298536477,08:00-20:00,false
+6,Minsk,"Street 98, Building 11",+375298090293,08:00-20:00,false
+7,Pinsk,"Street 20, Building 14",+375296647119,08:00-20:00,true
+8,Mogilev,"Street 49, Building 7",+375297022674,08:00-20:00,false
+9,Pinsk,"Street 6, Building 47",+375298707870,08:00-20:00,true
+10,Bobruisk,"Street 11, Building 36",+375295918715,08:00-20:00,false
+11,Novopolotsk,"Street 25, Building 46",+375292166941,08:00-20:00,true
+12,Borisov,"Street 99, Building 19",+375292338687,08:00-20:00,true
+13,Vitebsk,"Street 49, Building 18",+375298606962,08:00-20:00,false
+14,Brest,"Street 48, Building 23",+375294514944,08:00-20:00,false
+15,Mogilev,"Street 78, Building 41",+375293871230,08:00-20:00,true

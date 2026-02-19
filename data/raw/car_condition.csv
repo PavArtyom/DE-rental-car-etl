@@ -1,0 +1,518 @@
+condition_id,car_id,entry_date,entry_type,description,cost,reported_by,is_repaired,repair_date,notes
+1,1,2024-12-23,Maintenance,Suspension Repair,2650.29,Employee,true,2024-12-24,Major repair required
+2,1,2024-10-03,Damage,No Damage,0.0,Employee,false,,Minor issue
+3,1,2023-09-04,Maintenance,Engine Repair,2906.08,Employee,true,2023-09-06,Major repair required
+4,1,2025-01-11,Maintenance,Engine Repair,2918.03,Employee,true,2025-01-20,Warranty repair
+5,1,2023-06-19,Maintenance,Tire Replacement,1083.64,System,true,2023-06-25,Minor issue
+6,2,2024-06-02,Maintenance,Suspension Repair,2201.55,Customer,true,2024-06-16,Major repair required
+7,2,2025-09-23,Damage,Bumper Damage,1721.1,Employee,false,,Major repair required
+8,2,2025-03-13,Damage,Dent,412.21,System,true,2025-03-24,Regular check
+9,2,2024-05-25,Maintenance,Suspension Repair,2803.96,Customer,true,2024-05-29,Major repair required
+10,2,2023-09-22,Maintenance,Tire Replacement,1127.2,Employee,true,2023-09-24,Regular check
+11,2,2023-04-13,Maintenance,Battery Replacement,310.19,Employee,true,2023-04-20,
+12,2,2023-02-15,Maintenance,Tire Replacement,813.08,Employee,true,2023-02-28,Minor issue
+13,2,2024-10-21,Maintenance,Battery Replacement,529.34,Employee,true,2024-11-03,
+14,3,2024-04-24,Damage,Headlight Broken,437.23,Employee,true,2024-05-07,
+15,3,2025-04-22,Damage,Broken Window,743.06,Employee,true,2025-04-23,Warranty repair
+16,3,2023-04-22,Maintenance,Transmission Service,3429.59,Employee,true,2023-04-23,Minor issue
+17,3,2025-01-23,Damage,Scratch,56.0,System,true,2025-01-31,Major repair required
+18,3,2025-02-23,Maintenance,Oil Change,148.65,Employee,true,2025-02-25,Warranty repair
+19,3,2024-03-12,Maintenance,Battery Replacement,331.7,Customer,true,2024-03-23,Minor issue
+20,4,2023-04-18,Damage,No Damage,0.0,Customer,true,2023-04-25,Warranty repair
+21,5,2024-01-01,Maintenance,Tire Replacement,1118.47,Customer,true,2024-01-02,Major repair required
+22,5,2024-02-14,Damage,Headlight Broken,546.63,Customer,true,2024-02-24,
+23,5,2025-04-15,Maintenance,Brake Service,713.86,Customer,true,2025-04-19,
+24,5,2025-07-26,Maintenance,Regular Maintenance,491.06,Employee,true,2025-08-06,
+25,5,2025-03-01,Maintenance,Suspension Repair,1735.74,System,true,2025-03-15,Minor issue
+26,5,2025-06-02,Maintenance,Engine Repair,2593.65,Customer,true,2025-06-05,Major repair required
+27,5,2025-10-19,Maintenance,Regular Maintenance,432.62,Employee,true,2025-10-27,
+28,5,2025-10-07,Damage,Interior Stain,195.54,Customer,false,,Warranty repair
+29,6,2025-11-11,Maintenance,Suspension Repair,1792.17,Customer,true,2025-11-21,Minor issue
+30,6,2024-09-12,Damage,Headlight Broken,1476.69,Employee,true,2024-09-13,Warranty repair
+31,6,2025-09-04,Maintenance,Oil Change,193.23,System,true,2025-09-13,
+32,6,2024-01-27,Damage,Interior Stain,250.89,Employee,false,,
+33,6,2024-09-12,Damage,Scratch,50.63,Employee,true,2024-09-13,Minor issue
+34,6,2024-03-10,Maintenance,Engine Repair,-4711.86,Employee,true,2024-03-13,Major repair required
+35,6,2023-10-16,Damage,Scratch,266.03,Employee,true,2023-10-30,Minor issue
+36,6,2024-02-20,Maintenance,Brake Service,780.36,Customer,true,2024-03-05,Warranty repair
+37,7,2025-08-05,Damage,Bumper Damage,1080.17,Customer,true,2025-08-07,Minor issue
+38,7,2023-12-05,Maintenance,Tire Replacement,779.25,Employee,true,2023-12-14,Warranty repair
+39,7,2023-11-06,Damage,Tire Damage,283.27,Employee,true,2023-11-18,Minor issue
+40,7,2025-05-02,Maintenance,Engine Repair,2381.76,System,true,2025-05-10,Warranty repair
+41,7,2025-02-19,Maintenance,Transmission Service,5062.05,Customer,true,2025-02-28,Regular check
+42,7,2025-04-28,Maintenance,Tire Replacement,1196.1,Employee,true,2025-05-08,Regular check
+43,8,2025-04-06,Maintenance,Oil Change,164.16,System,true,2025-04-08,Major repair required
+44,8,2025-07-16,Damage,Broken Window,1145.6,Employee,false,,Major repair required
+45,8,2023-12-20,Maintenance,Transmission Service,2090.57,System,true,2023-12-24,
+46,9,2023-09-25,Damage,Headlight Broken,925.57,System,false,,
+47,9,2025-06-24,Damage,No Damage,0.0,System,false,,
+48,9,2023-11-12,Maintenance,Engine Repair,2241.1,System,true,2023-11-24,Warranty repair
+49,9,2024-09-27,Maintenance,Suspension Repair,2607.28,Employee,true,2024-09-29,Minor issue
+50,9,2023-03-21,Damage,Dent,-343.21,Customer,true,2023-03-30,Regular check
+51,10,2025-02-02,Damage,Dent,234.46,Employee,false,,Warranty repair
+52,10,2023-10-22,Maintenance,Engine Repair,3601.33,Customer,true,2023-10-29,Warranty repair
+53,11,2025-04-07,Maintenance,Battery Replacement,623.25,Employee,true,2025-04-17,Regular check
+54,11,2023-05-11,Maintenance,Tire Replacement,651.68,Employee,true,2023-05-22,Warranty repair
+55,11,2025-10-28,Damage,Scratch,260.37,System,true,2025-11-11,Major repair required
+56,12,2024-08-09,Damage,Scratch,229.08,Employee,true,2024-08-20,Regular check
+57,12,2024-06-11,Maintenance,AC Service,1146.07,Customer,true,2024-06-21,Major repair required
+58,12,2023-11-16,Damage,Broken Window,762.44,Customer,true,2023-11-18,Regular check
+59,12,2025-10-24,Damage,Bumper Damage,1544.88,Employee,true,2025-10-27,Regular check
+60,12,2023-01-22,Damage,Bumper Damage,1985.65,System,true,2023-02-05,Minor issue
+61,12,2023-07-13,Damage,Tire Damage,377.71,System,false,,Warranty repair
+62,13,2024-01-22,Maintenance,Brake Service,452.1,System,true,2024-02-05,Minor issue
+63,13,2024-08-27,Maintenance,Brake Service,680.49,Employee,true,2024-09-02,Regular check
+64,13,2024-05-10,Maintenance,Transmission Service,2650.0,Customer,true,2024-05-11,Major repair required
+65,13,2025-03-16,Damage,Scratch,105.11,Customer,true,2025-03-21,Warranty repair
+66,14,2025-08-20,Maintenance,AC Service,942.58,Employee,true,2025-09-03,Minor issue
+67,14,2024-05-05,Damage,Interior Stain,428.54,System,true,2024-05-14,Regular check
+68,15,2025-11-01,Maintenance,Oil Change,140.37,Employee,true,2025-11-07,Warranty repair
+69,15,2023-11-05,Damage,Dent,741.65,Employee,true,2023-11-06,Major repair required
+70,15,2025-07-11,Maintenance,Engine Repair,2075.09,Customer,true,2025-07-22,Warranty repair
+71,15,2023-07-18,Maintenance,Engine Repair,3408.25,Employee,true,2023-07-25,Warranty repair
+72,15,2023-07-23,Damage,Scratch,799.2692015534449,System,false,,Minor issue
+73,15,2024-04-15,Maintenance,AC Service,1141.93,Customer,true,2024-04-28,Minor issue
+74,15,2023-05-27,Damage,Interior Stain,288.71,Customer,true,2023-06-03,Minor issue
+75,16,2023-10-02,Maintenance,Engine Repair,3150.18,Customer,true,2023-10-10,
+76,16,2023-09-10,Maintenance,Oil Change,129.36,System,true,2023-09-13,Regular check
+77,16,2024-02-05,Damage,Broken Window,566.28,Customer,false,,Regular check
+78,16,2024-04-27,Damage,Scratch,234.86,System,false,,Minor issue
+79,16,2023-01-01,Maintenance,Tire Replacement,986.29,System,true,2023-01-10,Major repair required
+80,16,2024-12-08,Maintenance,Tire Replacement,1074.94,Customer,true,2024-12-21,Warranty repair
+81,16,2024-07-11,Maintenance,Oil Change,189.27,System,true,2024-07-22,Regular check
+82,17,2024-12-17,Maintenance,Oil Change,80.92,Customer,true,2024-12-22,Regular check
+83,17,2023-06-23,Maintenance,Battery Replacement,722.09,Customer,true,2023-06-30,Warranty repair
+84,17,2024-12-09,Maintenance,Tire Replacement,550.73,System,true,2024-12-11,Regular check
+85,18,2024-11-23,Maintenance,Tire Replacement,1141.29,System,true,2024-12-02,Major repair required
+86,18,2024-10-27,Maintenance,Battery Replacement,722.05,Employee,true,2024-11-01,Minor issue
+87,18,2025-02-01,Maintenance,AC Service,874.37,Customer,true,2025-02-04,
+88,18,2025-08-20,Maintenance,Battery Replacement,426.13,Customer,true,2025-08-24,Minor issue
+89,19,2025-03-12,Maintenance,Tire Replacement,424.75,Employee,true,2025-03-18,Warranty repair
+90,19,2023-05-28,Damage,Bumper Damage,734.37,Customer,true,2023-06-11,
+91,19,2024-11-21,Maintenance,Transmission Service,4650.53,Customer,true,2024-11-29,Minor issue
+92,20,2024-02-03,Damage,Scratch,295.11,Employee,true,2024-02-12,Regular check
+93,21,2025-09-10,Damage,No Damage,0.0,System,false,,Warranty repair
+94,22,2023-06-24,Maintenance,Battery Replacement,673.96,Customer,true,2023-07-06,Minor issue
+95,22,2024-08-18,Damage,Interior Stain,331.91,System,true,2024-08-21,Major repair required
+96,22,2024-03-05,Maintenance,Regular Maintenance,307.62,Customer,true,2024-03-19,Warranty repair
+97,22,2025-02-27,Maintenance,Brake Service,567.16,Employee,true,2025-03-10,Minor issue
+98,22,2024-11-04,Maintenance,Oil Change,171.32,Customer,true,2024-11-13,Regular check
+99,22,2025-05-02,Maintenance,Engine Repair,3630.43,Customer,true,2025-05-08,Major repair required
+100,22,2023-10-09,Damage,Dent,302.98,Employee,false,,Warranty repair
+101,23,2025-08-02,Maintenance,Brake Service,536.92,Customer,true,2025-08-11,Major repair required
+102,23,2025-04-11,Damage,Mirror Damage,964.09,Employee,true,2025-04-25,Warranty repair
+103,23,2025-01-05,Damage,Bumper Damage,1308.57,Employee,false,,Major repair required
+104,23,2025-02-09,Maintenance,Tire Replacement,1074.63,System,true,2025-02-21,Regular check
+105,23,2023-09-27,Maintenance,Brake Service,670.18,Employee,true,2023-09-30,Major repair required
+106,23,2023-08-08,Maintenance,Engine Repair,4450.94,System,true,2023-08-11,Minor issue
+107,23,2023-10-17,Maintenance,Oil Change,192.13,Customer,true,2023-10-31,Regular check
+108,24,2024-06-25,Maintenance,Battery Replacement,717.5,System,true,2024-07-09,
+109,24,2023-02-11,Damage,Tire Damage,358.32,Employee,false,,Regular check
+110,24,2024-08-07,Damage,Scratch,113.83,System,false,,Major repair required
+111,25,2025-10-15,Maintenance,Battery Replacement,719.99,Employee,true,2025-10-18,
+112,25,2024-03-14,Maintenance,Battery Replacement,527.67,System,true,2024-03-18,
+113,25,2024-12-01,Damage,Scratch,218.41,Employee,false,,Minor issue
+114,25,2023-02-02,Maintenance,Engine Repair,4027.11,System,true,2023-02-14,Minor issue
+115,26,2024-10-14,Maintenance,Oil Change,195.91,Customer,true,2024-10-23,Major repair required
+116,26,2023-08-19,Damage,Tire Damage,182.95,Customer,true,2023-08-29,
+117,26,2024-09-24,Damage,Scratch,228.37,Customer,true,2024-09-30,Minor issue
+118,26,2025-08-09,Maintenance,Brake Service,4870.846021198472,Customer,true,2025-08-13,Regular check
+119,26,2023-12-19,Maintenance,Brake Service,410.52,Customer,true,2023-12-22,Minor issue
+120,27,2025-08-15,Damage,Dent,393.92,System,false,,Major repair required
+121,27,2024-12-04,Damage,No Damage,0.0,Employee,false,,Minor issue
+122,27,2025-12-28,Maintenance,Oil Change,170.35,System,true,2026-01-06,Major repair required
+123,27,2024-07-22,Maintenance,Brake Service,355.42,Customer,true,2024-07-26,Minor issue
+124,27,2023-06-15,Damage,Interior Stain,117.38,System,false,,Major repair required
+125,27,2024-01-14,Damage,Broken Window,514.84,Customer,true,2024-01-23,Major repair required
+126,28,2024-08-13,Damage,Tire Damage,104.36,Customer,true,2024-08-15,Minor issue
+127,28,2023-05-04,Damage,Bumper Damage,1189.92,Employee,true,2023-05-18,Minor issue
+128,28,2023-07-23,Maintenance,AC Service,649.87,Employee,true,2023-07-28,Minor issue
+129,29,2025-03-14,Damage,Bumper Damage,687.38,System,false,,Major repair required
+130,29,2024-12-11,Damage,Interior Stain,213.21,Customer,true,2024-12-22,
+131,29,2023-12-24,Maintenance,Suspension Repair,2046.91,Employee,true,2023-12-26,
+132,30,2023-08-12,Maintenance,Battery Replacement,724.96,Employee,true,2023-08-13,Regular check
+133,30,2023-09-26,Damage,Mirror Damage,413.32,Customer,true,2023-10-02,Regular check
+134,30,2023-05-01,Maintenance,Suspension Repair,2396.47,Customer,true,2023-05-13,Warranty repair
+135,30,2025-06-23,Damage,Scratch,231.87,System,false,,Warranty repair
+136,30,2025-05-12,Damage,Bumper Damage,1440.54,Employee,false,,Minor issue
+137,30,2023-06-08,Maintenance,Engine Repair,4551.58,System,true,2023-06-15,Warranty repair
+138,30,2023-10-09,Maintenance,Engine Repair,2524.77,System,true,2023-10-18,Warranty repair
+139,31,2024-02-15,Maintenance,Engine Repair,3808.72,Employee,true,2024-02-25,Warranty repair
+140,31,2024-08-21,Damage,No Damage,0.0,System,false,,
+141,31,2025-12-23,Maintenance,Battery Replacement,549.47,Customer,true,2025-12-28,Minor issue
+142,32,2024-01-15,Maintenance,Engine Repair,1396.06,Customer,true,2024-01-25,Regular check
+143,32,2025-05-16,Damage,Tire Damage,217.63,Employee,true,2025-05-22,Warranty repair
+144,32,2025-06-18,Maintenance,Regular Maintenance,396.46,System,true,2025-06-30,Warranty repair
+145,32,2023-03-02,Damage,Interior Stain,144.68,System,true,2023-03-15,Warranty repair
+146,32,2025-09-02,Damage,Headlight Broken,560.29,Employee,true,2025-09-08,Regular check
+147,32,2024-12-02,Damage,Tire Damage,386.23,Customer,false,,
+148,32,2025-05-06,Maintenance,Oil Change,96.59,Customer,true,2025-05-11,Minor issue
+149,33,2023-04-05,Maintenance,Oil Change,167.98,Employee,true,2023-04-15,Major repair required
+150,33,2024-07-19,Maintenance,Oil Change,112.24,System,true,2024-07-24,
+151,33,2023-04-26,Maintenance,Suspension Repair,1765.15,Employee,true,2023-04-30,Major repair required
+152,33,2025-10-05,Damage,No Damage,0.0,System,true,2025-10-18,Major repair required
+153,33,2024-04-06,Maintenance,Oil Change,124.96,System,true,2024-04-11,
+154,33,2025-06-25,Damage,Dent,543.3,Customer,false,,Major repair required
+155,33,2023-07-14,Damage,Headlight Broken,1338.63,Employee,false,,Major repair required
+156,34,2023-05-25,Maintenance,Regular Maintenance,518.7,System,true,2023-06-07,Warranty repair
+157,34,2025-08-07,Maintenance,Transmission Service,4082.03,Customer,true,2025-08-11,Warranty repair
+158,34,2024-05-04,Maintenance,Oil Change,150.89,System,true,2024-05-07,Regular check
+159,34,2024-02-25,Damage,Dent,770.32,Customer,true,2024-03-09,Minor issue
+160,34,2025-10-10,Damage,Tire Damage,397.39,System,true,2025-10-19,Regular check
+161,34,2023-07-13,Damage,Headlight Broken,1069.94,System,true,2023-07-24,Regular check
+162,34,2024-02-13,Damage,Mirror Damage,4429.672149907394,Employee,true,2024-02-27,Warranty repair
+163,35,2025-11-25,Maintenance,Tire Replacement,800.33,System,true,2025-11-29,
+164,36,2024-01-14,Damage,Mirror Damage,982.32,Customer,false,,
+165,36,2024-02-26,Damage,Scratch,294.32,System,false,,Warranty repair
+166,36,2025-10-04,Damage,Interior Stain,339.2,System,false,,Regular check
+167,36,2024-06-26,Maintenance,Transmission Service,2701.11,Customer,true,2024-07-10,
+168,37,2025-09-24,Maintenance,Suspension Repair,2576.36,System,true,2025-09-27,Minor issue
+169,38,2025-09-07,Damage,Scratch,266.49,System,true,2025-09-20,Regular check
+170,38,2025-09-12,Damage,Broken Window,301.39,Customer,true,2025-09-13,Regular check
+171,38,2024-03-06,Damage,Dent,244.11,Employee,false,,Minor issue
+172,38,2023-03-10,Maintenance,Transmission Service,5686.71,Customer,true,2023-03-13,Regular check
+173,39,2024-12-22,Maintenance,Tire Replacement,703.36,System,true,2025-01-05,Major repair required
+174,39,2025-06-06,Maintenance,AC Service,904.69,Employee,true,2025-06-09,
+175,39,2024-07-19,Maintenance,Brake Service,480.09,System,true,2024-07-25,Major repair required
+176,39,2023-06-02,Maintenance,Brake Service,304.76,Employee,true,2023-06-15,
+177,39,2025-11-05,Damage,Interior Stain,213.96,Customer,true,2025-11-09,Minor issue
+178,39,2025-11-21,Damage,Bumper Damage,859.74,System,true,2025-11-23,
+179,40,2024-01-15,Maintenance,Engine Repair,3283.32,Employee,true,2024-01-29,Major repair required
+180,40,2024-01-26,Damage,Dent,717.49,Employee,true,2024-02-06,
+181,40,2023-12-01,Maintenance,Regular Maintenance,464.03,System,true,2023-12-15,Major repair required
+182,40,2025-03-06,Maintenance,Brake Service,480.57,System,true,2025-03-07,Warranty repair
+183,40,2025-11-28,Maintenance,AC Service,707.41,Customer,true,2025-12-06,Regular check
+184,40,2024-08-23,Maintenance,Oil Change,194.52,System,true,2024-08-30,Major repair required
+185,41,2023-08-12,Maintenance,AC Service,713.52,Customer,true,2023-08-15,Regular check
+186,42,2023-08-16,Maintenance,Suspension Repair,2475.17,Employee,true,2023-08-29,
+187,42,2025-09-19,Maintenance,Suspension Repair,2183.9,Employee,true,2025-09-30,Warranty repair
+188,42,2023-05-06,Maintenance,Tire Replacement,1176.86,System,true,2023-05-18,Major repair required
+189,42,2024-04-25,Damage,Dent,724.63,Employee,false,,Warranty repair
+190,42,2024-03-11,Damage,Interior Stain,464.04,System,false,,Warranty repair
+191,42,2023-10-07,Damage,Mirror Damage,937.75,Customer,true,2023-10-18,
+192,42,2023-10-24,Damage,Tire Damage,116.18,System,true,2023-10-29,Regular check
+193,42,2023-05-01,Maintenance,Transmission Service,5651.84,Customer,true,2023-05-03,Warranty repair
+194,43,2024-01-13,Maintenance,Transmission Service,5973.6,Customer,true,2024-01-26,Warranty repair
+195,43,2024-06-04,Maintenance,Regular Maintenance,596.05,Employee,true,2024-06-17,Warranty repair
+196,43,2024-03-17,Damage,Broken Window,832.01,Employee,true,2024-03-20,Major repair required
+197,43,2023-03-14,Maintenance,Tire Replacement,1152.98,System,true,2023-03-18,Warranty repair
+198,43,2024-02-09,Damage,Broken Window,723.56,System,true,2024-02-14,
+199,43,2023-10-11,Damage,Scratch,74.99,Employee,true,2023-10-15,Minor issue
+200,44,2024-10-02,Maintenance,Regular Maintenance,555.49,System,true,2024-10-09,Regular check
+201,45,2023-04-12,Maintenance,Transmission Service,6027.17,Employee,true,2023-04-14,Minor issue
+202,45,2023-12-28,Maintenance,Regular Maintenance,542.96,System,true,2024-01-11,Major repair required
+203,46,2023-04-09,Maintenance,Battery Replacement,776.21,System,true,2023-04-18,Major repair required
+204,46,2024-01-08,Damage,Dent,796.15,Customer,false,,Regular check
+205,46,2024-10-01,Damage,Tire Damage,145.05,Employee,true,2024-10-13,Warranty repair
+206,46,2023-01-05,Maintenance,Oil Change,131.7,System,true,2023-01-18,Regular check
+207,46,2023-01-13,Maintenance,Regular Maintenance,330.16,System,true,2023-01-16,Major repair required
+208,46,2023-06-16,Damage,Bumper Damage,1605.64,Customer,false,,Major repair required
+209,46,2023-10-24,Maintenance,Regular Maintenance,421.72,System,true,2023-10-30,Regular check
+210,47,2023-12-12,Damage,Scratch,253.08,Customer,false,,Warranty repair
+211,47,2025-01-08,Maintenance,AC Service,816.37,Employee,true,2025-01-21,Major repair required
+212,47,2023-12-06,Damage,Scratch,90.74,Employee,false,,
+213,47,2025-03-15,Damage,Tire Damage,397.19,System,true,2025-03-16,Regular check
+214,48,2023-09-22,Damage,Tire Damage,175.14,Customer,true,2023-09-30,Minor issue
+215,48,2023-03-26,Damage,Broken Window,798.22,Customer,true,2023-03-28,Major repair required
+216,48,2024-03-04,Damage,Bumper Damage,882.08,System,true,2024-03-16,
+217,48,2024-02-01,Maintenance,Engine Repair,1260.39,System,true,2024-02-07,Major repair required
+218,48,2025-11-04,Maintenance,Tire Replacement,1040.27,Employee,true,2025-11-08,Major repair required
+219,48,2024-06-24,Damage,Bumper Damage,983.53,Employee,true,2024-07-02,Warranty repair
+220,48,2023-08-21,Maintenance,Transmission Service,4317.26,Customer,true,2023-08-29,Warranty repair
+221,49,2025-01-03,Maintenance,Oil Change,158.74,System,true,2025-01-12,
+222,49,2024-03-14,Maintenance,Suspension Repair,830.21,Customer,true,2024-03-17,Major repair required
+223,49,2024-11-07,Damage,Scratch,163.96,System,true,2024-11-10,Major repair required
+224,49,2024-04-26,Maintenance,AC Service,844.64,Customer,true,2024-05-04,Major repair required
+225,49,2025-05-21,Maintenance,Suspension Repair,1349.28,System,true,2025-05-28,
+226,50,2023-11-01,Maintenance,Battery Replacement,655.34,Customer,true,2023-11-13,Warranty repair
+227,50,2023-01-26,Damage,No Damage,0.0,System,false,,Warranty repair
+228,50,2025-12-14,Damage,Mirror Damage,409.96,System,true,2025-12-23,
+229,50,2025-10-15,Damage,Tire Damage,318.26,System,false,,
+230,50,2025-01-09,Damage,Interior Stain,322.47,System,false,,Warranty repair
+231,50,2025-04-08,Damage,Mirror Damage,875.83,Employee,true,2025-04-17,Regular check
+232,51,2023-02-24,Maintenance,Tire Replacement,582.42,Employee,true,2023-03-05,Warranty repair
+233,51,2025-02-13,Damage,Bumper Damage,819.45,Employee,false,,Warranty repair
+234,52,2023-06-26,Maintenance,Transmission Service,2390.33,System,true,2023-06-28,Warranty repair
+235,52,2023-01-23,Maintenance,Brake Service,602.71,Employee,true,2023-02-06,
+236,53,2024-04-21,Damage,Interior Stain,121.62,System,true,2024-05-01,Warranty repair
+237,54,2023-02-18,Damage,No Damage,0.0,System,true,2023-02-26,Major repair required
+238,54,2025-06-14,Maintenance,Suspension Repair,1712.34,Customer,true,2025-06-15,Major repair required
+239,54,2023-12-01,Maintenance,Regular Maintenance,225.23,System,true,2023-12-06,
+240,54,2024-06-02,Maintenance,Transmission Service,4945.32,Customer,true,2024-06-13,Warranty repair
+241,54,2025-03-09,Maintenance,Brake Service,644.77,Customer,true,2025-03-21,Major repair required
+242,55,2024-05-28,Maintenance,AC Service,551.32,Employee,true,2024-05-29,Minor issue
+243,56,2025-03-17,Maintenance,Tire Replacement,613.13,Customer,true,2025-03-20,Major repair required
+244,56,2023-03-19,Damage,Mirror Damage,499.84,Customer,false,,Warranty repair
+245,57,2023-03-20,Maintenance,Tire Replacement,675.33,System,true,2023-03-27,Major repair required
+246,58,2023-07-11,Damage,Tire Damage,375.44,System,false,,Regular check
+247,58,2024-01-28,Damage,Broken Window,1100.97,Employee,false,,Warranty repair
+248,58,2023-12-24,Damage,Headlight Broken,1151.53,Customer,false,,Regular check
+249,58,2025-10-13,Maintenance,Battery Replacement,465.59,Customer,true,2025-10-27,
+250,58,2025-11-25,Damage,Interior Stain,442.87,Employee,false,,Regular check
+251,58,2025-03-05,Maintenance,Brake Service,452.47,Customer,true,2025-03-08,Minor issue
+252,58,2024-03-03,Maintenance,Engine Repair,1782.09,Employee,true,2024-03-17,Regular check
+253,58,2023-05-05,Maintenance,Tire Replacement,4917.54139376924,Employee,true,2023-05-08,Regular check
+254,59,2024-06-14,Damage,Mirror Damage,726.31,Employee,true,2024-06-18,Warranty repair
+255,59,2025-04-19,Maintenance,Oil Change,111.37,Employee,true,2025-04-21,Regular check
+256,59,2023-06-13,Damage,No Damage,0.0,Customer,false,,Minor issue
+257,59,2024-06-14,Maintenance,Tire Replacement,554.96,Employee,true,2024-06-28,Regular check
+258,59,2025-06-23,Maintenance,Suspension Repair,2199.79,Customer,true,2025-06-27,Regular check
+259,59,2023-04-02,Damage,Headlight Broken,481.06,System,false,,Regular check
+260,59,2023-06-13,Maintenance,AC Service,785.57,Employee,true,2023-06-21,Regular check
+261,60,2023-09-10,Damage,Scratch,186.68,Employee,false,,Major repair required
+262,60,2024-03-28,Maintenance,Engine Repair,4684.4,Customer,true,2024-04-06,Warranty repair
+263,61,2023-06-14,Damage,Interior Stain,180.47,Employee,false,,
+264,61,2025-05-19,Maintenance,Transmission Service,4337.59,Customer,true,2025-06-01,Warranty repair
+265,61,2025-11-14,Maintenance,Oil Change,165.15,Employee,true,2025-11-15,Major repair required
+266,61,2025-06-04,Maintenance,Battery Replacement,606.07,Customer,true,2025-06-08,Warranty repair
+267,61,2025-12-27,Damage,Bumper Damage,1170.1,Employee,true,2026-01-09,Minor issue
+268,61,2023-01-13,Damage,Interior Stain,281.93,System,true,2023-01-21,Minor issue
+269,62,2024-11-25,Maintenance,Battery Replacement,646.0,System,true,2024-11-30,Warranty repair
+270,62,2023-09-18,Damage,Broken Window,766.56,System,false,,Warranty repair
+271,62,2024-02-03,Maintenance,Brake Service,425.16,Customer,true,2024-02-05,
+272,62,2025-05-27,Damage,Headlight Broken,1492.71,Customer,false,,
+273,63,2025-12-07,Maintenance,AC Service,1099.58,System,true,2025-12-08,Minor issue
+274,63,2023-06-25,Maintenance,Engine Repair,2688.47,Employee,true,2023-07-04,Minor issue
+275,63,2023-02-26,Damage,Dent,606.1,System,true,2023-03-03,Major repair required
+276,63,2024-11-05,Maintenance,Tire Replacement,821.17,System,true,2024-11-10,Major repair required
+277,64,2024-02-10,Maintenance,Brake Service,472.67,Customer,true,2024-02-22,
+278,64,2023-05-07,Maintenance,AC Service,524.05,Employee,true,2023-05-14,Regular check
+279,64,2024-03-04,Maintenance,Brake Service,777.67,System,true,2024-03-18,Minor issue
+280,64,2024-09-28,Maintenance,Oil Change,93.6,System,true,2024-10-04,Major repair required
+281,64,2024-09-09,Maintenance,Battery Replacement,429.74,Customer,true,2024-09-20,Regular check
+282,64,2023-08-26,Maintenance,Battery Replacement,371.58,Employee,true,2023-09-05,Warranty repair
+283,64,2025-02-16,Damage,Dent,373.46,Employee,true,2025-02-26,Major repair required
+284,65,2023-11-22,Maintenance,Battery Replacement,618.26,Customer,true,2023-11-25,Warranty repair
+285,66,2025-05-08,Damage,Headlight Broken,1031.7,System,false,,
+286,66,2024-03-24,Damage,Dent,365.97,Customer,true,2024-03-30,Minor issue
+287,66,2024-06-11,Maintenance,Engine Repair,4495.08,System,true,2024-06-14,Regular check
+288,66,2023-12-21,Damage,Mirror Damage,516.05,Customer,true,2023-12-31,Warranty repair
+289,66,2025-01-18,Damage,Bumper Damage,1292.97,System,true,2025-02-01,
+290,66,2023-06-28,Maintenance,Engine Repair,4722.82,Employee,true,2023-07-05,Warranty repair
+291,66,2024-11-23,Maintenance,Transmission Service,4672.86,Employee,true,2024-12-07,Minor issue
+292,66,2025-08-06,Damage,Mirror Damage,815.84,Customer,true,2025-08-18,Minor issue
+293,67,2025-07-06,Damage,Bumper Damage,923.54,Employee,true,2025-07-12,Regular check
+294,67,2023-12-05,Maintenance,Brake Service,477.38,Employee,true,2023-12-08,Warranty repair
+295,67,2025-12-24,Maintenance,AC Service,420.09,System,true,2025-12-25,Regular check
+296,68,2023-09-23,Maintenance,Regular Maintenance,-411.62,Customer,true,2023-09-27,Minor issue
+297,68,2024-07-24,Maintenance,Suspension Repair,2120.45,System,true,2024-08-01,
+298,68,2024-07-20,Maintenance,Brake Service,506.56,Customer,true,2024-07-31,Minor issue
+299,69,2023-04-26,Damage,Interior Stain,96.55,Employee,true,2023-04-28,Warranty repair
+300,69,2023-03-16,Maintenance,Tire Replacement,450.32,Customer,true,2023-03-24,Warranty repair
+301,69,2024-10-25,Maintenance,Regular Maintenance,210.14,System,true,2024-11-07,Regular check
+302,69,2025-09-14,Maintenance,Transmission Service,3802.39,Customer,true,2025-09-27,Warranty repair
+303,69,2025-06-05,Damage,Broken Window,560.37,System,false,,Warranty repair
+304,69,2024-12-09,Maintenance,Suspension Repair,1950.48,Customer,true,2024-12-12,Regular check
+305,70,2024-01-28,Damage,Tire Damage,300.47,System,false,,Major repair required
+306,70,2025-12-03,Maintenance,AC Service,1184.53,System,true,2025-12-14,Major repair required
+307,71,2025-02-05,Damage,Tire Damage,186.89,System,false,,Major repair required
+308,71,2024-05-18,Damage,Dent,484.57,System,false,,
+309,72,2023-01-24,Maintenance,Engine Repair,4154.88,Customer,true,2023-01-31,
+310,72,2023-08-24,Damage,Scratch,67.55,System,false,,Warranty repair
+311,72,2023-06-19,Maintenance,Suspension Repair,2068.53,Customer,true,2023-06-29,Minor issue
+312,72,2023-12-20,Damage,Broken Window,355.08,System,false,,Regular check
+313,73,2024-04-09,Maintenance,Brake Service,378.59,Employee,true,2024-04-13,Major repair required
+314,73,2023-04-02,Maintenance,Oil Change,141.69,Customer,true,2023-04-05,Minor issue
+315,73,2023-11-10,Damage,Dent,579.34,Employee,true,2023-11-17,Regular check
+316,74,2023-10-27,Damage,Interior Stain,290.89,Employee,true,2023-10-30,Major repair required
+317,74,2025-08-02,Maintenance,Battery Replacement,639.12,Employee,true,2025-08-05,
+318,74,2023-07-22,Maintenance,Regular Maintenance,519.33,Employee,true,2023-07-29,Major repair required
+319,75,2025-01-05,Damage,Scratch,225.23,Customer,false,,
+320,75,2025-01-09,Damage,Dent,294.7,System,true,2025-01-11,Regular check
+321,75,2025-08-12,Damage,No Damage,0.0,System,false,,
+322,76,2023-10-05,Damage,Scratch,60.99,Customer,false,,Major repair required
+323,77,2025-12-05,Maintenance,Brake Service,702.97,Customer,true,2025-12-12,Warranty repair
+324,77,2025-08-02,Damage,Headlight Broken,1282.24,Customer,true,2025-08-12,
+325,77,2024-07-18,Damage,Headlight Broken,1227.16,Employee,true,2024-07-28,Major repair required
+326,77,2025-07-03,Damage,Mirror Damage,589.11,Employee,false,,
+327,78,2025-07-07,Maintenance,Engine Repair,1201.2,Employee,true,2025-07-17,Minor issue
+328,78,2025-09-18,Damage,Broken Window,450.96,Employee,false,,Warranty repair
+329,78,2025-04-18,Maintenance,Suspension Repair,1287.04,System,true,2025-04-26,
+330,78,2024-08-08,Maintenance,Battery Replacement,462.3,Customer,true,2024-08-16,
+331,78,2024-03-03,Damage,Broken Window,588.29,Customer,true,2024-03-04,Major repair required
+332,78,2025-08-04,Damage,Dent,718.14,Employee,true,2025-08-06,
+333,79,2023-03-20,Damage,Tire Damage,278.63,Employee,true,2023-03-23,Minor issue
+334,79,2024-12-21,Maintenance,Battery Replacement,694.96,System,true,2025-01-04,Minor issue
+335,79,2023-11-23,Maintenance,AC Service,800.43,Customer,true,2023-11-30,Major repair required
+336,79,2024-11-14,Damage,Dent,399.22,Customer,false,,Regular check
+337,79,2024-07-22,Maintenance,Oil Change,191.45,System,true,2024-07-31,Warranty repair
+338,80,2024-06-21,Damage,Broken Window,833.51,Employee,true,2024-06-27,
+339,80,2025-12-14,Damage,Broken Window,1015.72,Employee,true,2025-12-20,
+340,80,2023-05-10,Maintenance,Battery Replacement,413.62,Employee,true,2023-05-11,Regular check
+341,80,2023-05-12,Damage,Headlight Broken,842.32,Customer,false,,Warranty repair
+342,81,2025-09-10,Maintenance,Engine Repair,1696.74,Employee,true,2025-09-21,Minor issue
+343,82,2025-07-19,Damage,Broken Window,984.55,System,false,,Major repair required
+344,82,2025-06-28,Maintenance,Regular Maintenance,549.8,Employee,true,2025-06-29,
+345,82,2023-11-15,Damage,Mirror Damage,679.89,Customer,false,,Major repair required
+346,82,2024-01-25,Damage,Bumper Damage,1090.15,System,false,,Major repair required
+347,82,2023-09-13,Damage,Bumper Damage,546.89,Employee,false,,Minor issue
+348,82,2024-01-11,Maintenance,Engine Repair,3865.38,Employee,true,2024-01-14,Minor issue
+349,82,2025-07-21,Maintenance,AC Service,898.3,Employee,true,2025-07-29,Major repair required
+350,82,2025-10-08,Maintenance,Engine Repair,3826.69,Employee,true,2025-10-17,Regular check
+351,83,2025-05-17,Maintenance,Oil Change,191.11,System,true,2025-05-31,Warranty repair
+352,83,2025-08-01,Maintenance,Regular Maintenance,369.02,System,true,2025-08-14,Minor issue
+353,83,2024-10-09,Damage,Broken Window,1125.76,System,false,,Regular check
+354,83,2023-03-19,Damage,Headlight Broken,450.13,System,false,,Major repair required
+355,84,2024-04-22,Damage,Scratch,200.96,Customer,false,,Major repair required
+356,84,2024-10-09,Maintenance,Suspension Repair,2182.33,Customer,true,2024-10-10,Minor issue
+357,84,2025-01-06,Damage,Bumper Damage,1361.36,System,false,,Warranty repair
+358,85,2023-04-13,Maintenance,Tire Replacement,555.49,Customer,true,2023-04-19,Major repair required
+359,85,2023-11-09,Maintenance,Brake Service,470.72,Customer,true,2023-11-15,Warranty repair
+360,85,2024-10-06,Damage,Interior Stain,379.96,System,true,2024-10-12,Minor issue
+361,86,2023-12-06,Maintenance,Suspension Repair,1158.0,System,true,2023-12-12,
+362,87,2023-03-15,Damage,Broken Window,569.15,System,true,2023-03-29,Minor issue
+363,87,2025-04-02,Damage,Dent,742.42,Customer,false,,
+364,87,2023-09-09,Damage,Interior Stain,356.51,System,true,2023-09-13,Minor issue
+365,87,2023-10-12,Maintenance,Brake Service,662.15,System,true,2023-10-22,
+366,87,2024-03-20,Maintenance,Regular Maintenance,364.63,Customer,true,2024-03-28,
+367,87,2023-02-06,Maintenance,Brake Service,565.3,Customer,true,2023-02-17,
+368,87,2024-06-24,Maintenance,Regular Maintenance,242.69,Customer,true,2024-06-30,Major repair required
+369,87,2025-04-05,Damage,Interior Stain,348.19,System,true,2025-04-12,Minor issue
+370,88,2024-10-18,Maintenance,Tire Replacement,406.2,Employee,true,2024-10-19,Major repair required
+371,88,2025-11-18,Maintenance,Tire Replacement,745.08,Employee,true,2025-11-26,Warranty repair
+372,89,2023-11-24,Damage,Dent,631.59,Employee,true,2023-11-28,Minor issue
+373,89,2024-02-11,Maintenance,Engine Repair,4567.63,System,true,2024-02-20,Warranty repair
+374,89,2023-09-19,Damage,Headlight Broken,812.98,Customer,true,2023-09-21,Warranty repair
+375,89,2023-12-12,Maintenance,Battery Replacement,367.21,Customer,true,2023-12-20,
+376,89,2025-12-20,Maintenance,Brake Service,460.23,Customer,true,2025-12-28,Warranty repair
+377,89,2023-05-04,Maintenance,Oil Change,199.85,System,true,2023-05-07,Warranty repair
+378,89,2023-07-17,Maintenance,Battery Replacement,417.67,Employee,true,2023-07-30,Regular check
+379,89,2025-11-06,Maintenance,Tire Replacement,1194.22,System,true,2025-11-12,Warranty repair
+380,90,2024-01-05,Maintenance,Suspension Repair,2292.02,Employee,true,2024-01-11,
+381,90,2025-03-18,Damage,Scratch,144.64,System,false,,Regular check
+382,90,2025-09-19,Damage,Tire Damage,243.55,System,false,,
+383,90,2025-05-07,Damage,Dent,583.77,System,true,2025-05-10,
+384,90,2025-12-10,Maintenance,Suspension Repair,2758.82,System,true,2025-12-15,Major repair required
+385,91,2024-11-12,Damage,No Damage,0.0,Customer,true,2024-11-23,Warranty repair
+386,91,2024-09-13,Maintenance,Tire Replacement,1108.45,System,true,2024-09-14,Warranty repair
+387,91,2023-06-16,Damage,Dent,561.27,Customer,true,2023-06-26,Warranty repair
+388,92,2023-06-09,Damage,Bumper Damage,1107.81,Customer,false,,Regular check
+389,92,2024-04-05,Damage,Scratch,294.21,System,false,,Major repair required
+390,92,2025-05-28,Maintenance,Suspension Repair,1957.89,Customer,true,2025-06-11,Minor issue
+391,92,2023-01-10,Maintenance,Suspension Repair,2870.93,Customer,true,2023-01-15,Minor issue
+392,92,2023-05-14,Damage,Interior Stain,212.19,System,true,2023-05-15,Major repair required
+393,92,2023-04-20,Damage,Broken Window,1100.07,Customer,false,,
+394,92,2025-09-05,Maintenance,Oil Change,1455.9546322546844,System,true,2025-09-08,
+395,92,2023-04-28,Damage,Headlight Broken,660.16,Employee,false,,Regular check
+396,93,2025-11-24,Maintenance,Brake Service,414.3,Customer,true,2025-11-26,Major repair required
+397,93,2023-07-13,Maintenance,Battery Replacement,423.92,System,true,2023-07-20,Minor issue
+398,93,2023-05-09,Damage,Scratch,239.56,Employee,false,,Major repair required
+399,94,2023-02-17,Damage,Dent,722.95,Customer,true,2023-02-26,Regular check
+400,94,2023-08-03,Maintenance,Brake Service,629.35,Employee,true,2023-08-05,Minor issue
+401,94,2025-10-13,Maintenance,Engine Repair,2593.32,System,true,2025-10-22,Major repair required
+402,94,2025-06-26,Damage,Tire Damage,381.01,Employee,true,2025-07-02,Warranty repair
+403,94,2024-10-27,Maintenance,Transmission Service,6182.23,Customer,true,2024-11-10,
+404,94,2024-03-14,Maintenance,Regular Maintenance,224.66,Employee,true,2024-03-24,Minor issue
+405,94,2024-03-23,Damage,Interior Stain,404.76,Customer,false,,Warranty repair
+406,94,2023-04-11,Maintenance,Regular Maintenance,384.78,System,true,2023-04-25,Warranty repair
+407,95,2025-10-14,Damage,Interior Stain,103.1,Customer,false,,Regular check
+408,95,2025-10-18,Damage,Interior Stain,472.96,Employee,true,2025-10-29,Warranty repair
+409,95,2025-01-11,Damage,Broken Window,861.83,Customer,false,,Major repair required
+410,95,2023-09-28,Damage,Bumper Damage,1751.41,Customer,false,,Minor issue
+411,95,2023-08-19,Damage,Bumper Damage,1144.47,Customer,false,,
+412,95,2024-01-16,Maintenance,Oil Change,115.88,Employee,true,2024-01-28,Minor issue
+413,95,2025-02-27,Damage,Mirror Damage,505.12,Customer,true,2025-03-12,Warranty repair
+414,95,2023-04-05,Maintenance,Battery Replacement,355.95,Employee,true,2023-04-17,Major repair required
+415,96,2024-06-17,Damage,Bumper Damage,505.71,System,true,2024-06-25,Warranty repair
+416,96,2024-11-03,Damage,Bumper Damage,635.7,System,false,,Warranty repair
+417,96,2024-01-13,Damage,Tire Damage,286.97,Customer,false,,Minor issue
+418,96,2025-09-01,Maintenance,Suspension Repair,1413.7,Customer,true,2025-09-07,Minor issue
+419,96,2024-11-28,Damage,Broken Window,455.07,Customer,false,,Warranty repair
+420,97,2023-07-11,Maintenance,Regular Maintenance,532.92,System,true,2023-07-21,
+421,98,2023-06-04,Damage,Bumper Damage,861.35,Employee,true,2023-06-11,Major repair required
+422,98,2023-06-14,Damage,Bumper Damage,739.41,Employee,true,2023-06-16,Warranty repair
+423,99,2024-01-23,Maintenance,Tire Replacement,427.02,System,true,2024-01-27,
+424,99,2024-10-21,Maintenance,Transmission Service,2860.09,System,true,2024-10-25,Regular check
+425,99,2025-11-25,Damage,Bumper Damage,865.22,Customer,true,2025-12-02,Warranty repair
+426,99,2023-10-08,Damage,Dent,272.96,Employee,false,,Major repair required
+427,100,2025-07-26,Damage,Broken Window,360.75,Customer,true,2025-08-02,Minor issue
+428,100,2025-11-08,Maintenance,Brake Service,764.82,System,true,2025-11-13,
+429,101,2025-12-28,Maintenance,Transmission Service,6375.35,Customer,true,2025-12-30,Minor issue
+430,102,2023-01-01,Maintenance,Brake Service,480.03,System,true,2023-01-12,Major repair required
+431,102,2023-12-22,Maintenance,Brake Service,674.55,System,true,2023-12-30,Regular check
+432,102,2023-04-09,Damage,Headlight Broken,931.81,Customer,true,2023-04-17,Warranty repair
+433,103,2025-12-23,Damage,No Damage,0.0,Employee,true,2025-12-26,Regular check
+434,103,2023-08-17,Maintenance,Tire Replacement,981.42,Employee,true,2023-08-22,Major repair required
+435,103,2024-02-21,Damage,Dent,654.29,System,false,,Major repair required
+436,103,2023-12-12,Maintenance,Brake Service,525.52,Customer,true,2023-12-18,
+437,103,2023-05-15,Damage,Broken Window,748.63,Employee,true,2023-05-16,Regular check
+438,103,2024-05-10,Maintenance,AC Service,417.8,Customer,true,2024-05-12,Warranty repair
+439,103,2025-12-17,Damage,Mirror Damage,900.68,Customer,true,2025-12-24,Minor issue
+440,103,2024-10-15,Damage,No Damage,0.0,System,true,2024-10-17,Major repair required
+441,104,2025-06-16,Maintenance,AC Service,420.97,Employee,true,2025-06-29,
+442,104,2024-09-12,Maintenance,Regular Maintenance,264.77,System,true,2024-09-25,Major repair required
+443,104,2023-10-09,Damage,Broken Window,1100.6,Employee,true,2023-10-22,
+444,104,2023-10-27,Maintenance,AC Service,660.31,System,true,2023-11-01,Minor issue
+445,104,2025-05-20,Damage,Headlight Broken,443.26,System,false,,
+446,105,2023-10-05,Maintenance,AC Service,1145.7,Customer,true,2023-10-10,
+447,105,2024-03-24,Maintenance,Battery Replacement,607.62,System,true,2024-04-06,Major repair required
+448,105,2025-08-08,Damage,Scratch,159.81,Customer,true,2025-08-11,
+449,105,2024-08-19,Maintenance,Transmission Service,4058.67,Customer,true,2024-08-20,Regular check
+450,105,2023-06-13,Maintenance,AC Service,923.41,System,true,2023-06-25,Warranty repair
+451,105,2023-10-14,Damage,Broken Window,1109.35,Employee,true,2023-10-26,Regular check
+452,105,2025-11-23,Damage,Interior Stain,354.67,Customer,true,2025-12-03,Regular check
+453,105,2024-06-12,Damage,No Damage,0.0,System,true,2024-06-20,
+454,106,2025-05-09,Damage,Headlight Broken,1027.34,Customer,false,,Warranty repair
+455,106,2023-10-24,Maintenance,Engine Repair,1264.05,Customer,true,2023-11-07,Regular check
+456,106,2023-12-06,Maintenance,Regular Maintenance,268.58,Employee,true,2023-12-11,Warranty repair
+457,106,2024-01-07,Maintenance,Transmission Service,3751.38,Customer,true,2024-01-15,
+458,106,2023-10-16,Maintenance,Engine Repair,1989.98,Customer,true,2023-10-25,Warranty repair
+459,106,2023-10-01,Damage,Scratch,77.58,System,false,,Regular check
+460,107,2024-04-05,Damage,Dent,399.76,Customer,false,,Regular check
+461,107,2023-01-14,Damage,Broken Window,304.95,Employee,false,,Warranty repair
+462,107,2024-02-20,Maintenance,Tire Replacement,939.66,Customer,true,2024-03-05,Regular check
+463,107,2023-10-22,Damage,Interior Stain,116.41,Employee,false,,
+464,107,2025-12-13,Maintenance,Tire Replacement,991.04,System,true,2025-12-21,Regular check
+465,107,2025-01-20,Damage,Scratch,232.24,System,true,2025-01-22,Minor issue
+466,108,2023-09-03,Maintenance,Transmission Service,6004.3,Customer,true,2023-09-09,Major repair required
+467,108,2025-02-16,Damage,Broken Window,446.23,Employee,true,2025-02-20,Warranty repair
+468,109,2023-02-15,Maintenance,Oil Change,98.66,Customer,true,2023-02-19,Regular check
+469,109,2025-05-15,Damage,No Damage,0.0,Customer,true,2025-05-16,Major repair required
+470,109,2025-06-16,Maintenance,Oil Change,105.98,System,true,2025-06-22,Minor issue
+471,109,2025-07-10,Damage,Interior Stain,211.13,System,false,,Regular check
+472,109,2023-02-03,Maintenance,Suspension Repair,2339.36,Employee,true,2023-02-16,Minor issue
+473,110,2025-07-10,Damage,Interior Stain,399.17,System,true,2025-07-13,Regular check
+474,110,2024-07-09,Maintenance,Engine Repair,4573.91,Employee,true,2024-07-17,Minor issue
+475,110,2024-08-21,Damage,Broken Window,1138.92,Customer,false,,
+476,110,2024-09-01,Damage,Dent,488.36,Customer,true,2024-09-02,Major repair required
+477,110,2024-06-01,Maintenance,AC Service,1016.48,System,true,2024-06-11,Warranty repair
+478,110,2025-02-10,Maintenance,Suspension Repair,2068.57,Customer,true,2025-02-24,Minor issue
+479,110,2023-12-22,Damage,Broken Window,8546.887131141855,System,true,2024-01-01,Regular check
+480,111,2023-04-26,Damage,Tire Damage,106.18,Customer,false,,Warranty repair
+481,111,2025-06-24,Maintenance,Tire Replacement,618.3,Customer,true,2025-06-30,Warranty repair
+482,111,2025-04-25,Damage,Broken Window,555.92,Employee,false,,Warranty repair
+483,111,2025-04-06,Damage,Interior Stain,306.44,Employee,true,2025-04-13,Minor issue
+484,112,2024-03-10,Maintenance,Oil Change,123.9,System,true,2024-03-22,Regular check
+485,113,2025-06-04,Damage,No Damage,0.0,Employee,false,,Warranty repair
+486,114,2023-06-17,Damage,Scratch,244.24,System,true,2023-06-25,Warranty repair
+487,114,2025-11-24,Maintenance,Suspension Repair,2831.31,Customer,true,2025-11-27,Warranty repair
+488,114,2025-10-09,Damage,Mirror Damage,769.92,Employee,true,2025-10-20,Warranty repair
+489,114,2023-06-12,Damage,Tire Damage,298.6,Customer,false,,Minor issue
+490,114,2024-07-20,Maintenance,Tire Replacement,1009.34,Employee,true,2024-07-21,Minor issue
+491,114,2024-07-05,Damage,Dent,749.7,Customer,true,2024-07-16,Regular check
+492,114,2025-06-26,Damage,Bumper Damage,665.56,Customer,true,2025-07-05,Regular check
+493,115,2024-06-11,Damage,Headlight Broken,1399.75,System,false,,Minor issue
+494,115,2025-10-06,Damage,Headlight Broken,1163.57,Customer,true,2025-10-18,Regular check
+495,115,2023-03-10,Maintenance,Transmission Service,4629.77,Employee,true,2023-03-14,Regular check
+496,116,2024-02-10,Damage,Bumper Damage,8700.446188177306,Customer,false,,Warranty repair
+497,116,2025-05-26,Damage,Tire Damage,377.88,System,true,2025-05-31,Warranty repair
+498,116,2025-05-28,Maintenance,Tire Replacement,469.87,Customer,true,2025-06-05,Regular check
+499,116,2023-05-12,Maintenance,Brake Service,326.19,System,true,2023-05-21,Minor issue
+500,116,2023-05-24,Damage,Broken Window,643.9,Employee,true,2023-06-02,Major repair required
+501,116,2025-12-24,Maintenance,Regular Maintenance,344.04,Employee,true,2026-01-02,Regular check
+502,117,2025-04-22,Damage,Broken Window,954.02,System,false,,
+503,117,2024-01-02,Damage,Headlight Broken,433.22,Customer,false,,Regular check
+504,117,2024-10-19,Maintenance,Engine Repair,2028.98,Customer,true,2024-11-02,Minor issue
+505,118,2025-11-24,Damage,Mirror Damage,713.36,Employee,true,2025-12-04,Regular check
+506,118,2023-05-12,Maintenance,Transmission Service,4842.56,System,true,2023-05-26,
+507,119,2025-01-10,Maintenance,Engine Repair,1070.48,Customer,true,2025-01-18,Minor issue
+508,119,2025-09-06,Damage,Scratch,273.47,System,false,,Regular check
+509,119,2025-05-27,Maintenance,AC Service,585.19,Employee,true,2025-06-08,Warranty repair
+510,119,2024-03-15,Damage,Interior Stain,197.8,System,true,2024-03-23,Major repair required
+511,120,2024-07-02,Damage,No Damage,0.0,Customer,true,2024-07-13,Minor issue
+512,120,2024-05-26,Damage,Mirror Damage,707.65,Customer,true,2024-06-07,Warranty repair
+513,120,2025-07-12,Damage,Scratch,109.15,Employee,true,2025-07-18,
+514,120,2024-08-19,Maintenance,AC Service,501.79,System,true,2024-08-29,Minor issue
+515,120,2024-07-18,Damage,Mirror Damage,420.7,Employee,true,2024-07-21,
+516,120,2024-10-20,Damage,No Damage,0.0,System,true,2024-10-30,Regular check
+517,120,2023-07-28,Maintenance,Engine Repair,3207.44,Customer,true,2023-07-30,

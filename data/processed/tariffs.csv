@@ -1,0 +1,6 @@
+tariff_id,tariff_name,base_price_per_day,km_included_per_day,additional_km_price,deposit_amount,min_rental_days,max_rental_days,insurance_type,cancellation_policy,created_at,updated_at
+1,Economy,35.01,200,0.7,178.27,2,30,Standard,Flexible,2026-02-07 13:31:35.648411,2026-02-07 13:31:35.648411
+2,Standard,86.56,300,1.73,397.48,2,30,Standard,Flexible,2026-02-07 13:31:35.648411,2026-02-07 13:31:35.648411
+3,Premium,111.53,400,2.23,614.71,3,60,Basic,Strict,2026-02-07 13:31:35.648411,2026-02-07 13:31:35.648411
+4,Business,176.62,500,3.53,1110.65,3,60,Standard,Flexible,2026-02-07 13:31:35.648411,2026-02-07 13:31:35.648411
+5,Luxury,303.2,1000,6.06,1716.37,2,30,Standard,Standard,2026-02-07 13:31:35.648411,2026-02-07 13:31:35.648411
