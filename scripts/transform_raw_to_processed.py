@@ -1,6 +1,5 @@
 import pandas as pd
-import numpy as np
-from datetime import datetime, timedelta
+from datetime import datetime
 import os
 import logging
 
@@ -24,8 +23,8 @@ def process_raw_data():
 
     if not os.path.exists(raw_path):
         logger.error(f"Папка {raw_path} не существует!")
-        logger.error("Сначала сгенерируйте данные с помощью generator.py")
-        return
+        logger.error("Сначала сформируйте данные с помощью generate_source_data.py")
+        raise FileNotFoundError(f"Папка с исходными данными не найдена: {raw_path}")
 
     os.makedirs(processed_path, exist_ok=True)
 
@@ -51,8 +50,8 @@ def process_raw_data():
 
     if missing_files:
         logger.error(f"Отсутствуют файлы: {missing_files}")
-        logger.error("Сначала сгенерируйте все данные с помощью generator.py")
-        return
+        logger.error("Сначала сформируйте все данные с помощью generate_source_data.py")
+        raise FileNotFoundError(f"Отсутствуют исходные файлы: {', '.join(missing_files)}")
 
     process_locations(raw_path, processed_path)
     process_cars(raw_path, processed_path)
@@ -81,8 +80,13 @@ def process_locations(raw_path, processed_path):
     try:
         df = pd.read_csv(os.path.join(raw_path, 'locations.csv'))
 
-        df['is_active'] = df['is_active'].map({'true': True, 'false': False})
-        df['is_active'] = df['is_active'].fillna(True).astype(bool)
+        df['is_active'] = (
+            df['is_active']
+            .map({'true': True, 'false': False})
+            .astype('boolean')
+            .fillna(True)
+            .astype(bool)
+        )
 
         current_time = datetime.now()
         df['created_at'] = current_time
@@ -95,6 +99,7 @@ def process_locations(raw_path, processed_path):
 
     except Exception as e:
         logger.error(f"  ✗ Ошибка при обработке locations: {e}")
+        raise
 
 
 def process_cars(raw_path, processed_path):
@@ -136,6 +141,7 @@ def process_cars(raw_path, processed_path):
 
     except Exception as e:
         logger.error(f"  ✗ Ошибка при обработке cars: {e}")
+        raise
 
 
 def process_customers(raw_path, processed_path):
@@ -177,6 +183,7 @@ def process_customers(raw_path, processed_path):
 
     except Exception as e:
         logger.error(f" Ошибка при обработке customers: {e}")
+        raise
 
 
 def process_employees(raw_path, processed_path):
@@ -186,8 +193,13 @@ def process_employees(raw_path, processed_path):
 
 
         df['hire_date'] = pd.to_datetime(df['hire_date'], errors='coerce')
-        df['is_active'] = df['is_active'].map({'true': True, 'false': False})
-        df['is_active'] = df['is_active'].fillna(True).astype(bool)
+        df['is_active'] = (
+            df['is_active']
+            .map({'true': True, 'false': False})
+            .astype('boolean')
+            .fillna(True)
+            .astype(bool)
+        )
 
 
         df['salary'] = pd.to_numeric(df['salary'], errors='coerce').abs()
@@ -209,6 +221,7 @@ def process_employees(raw_path, processed_path):
 
     except Exception as e:
         logger.error(f"  ✗ Ошибка при обработке employees: {e}")
+        raise
 
 
 def process_tariffs(raw_path, processed_path):
@@ -249,6 +262,7 @@ def process_tariffs(raw_path, processed_path):
 
     except Exception as e:
         logger.error(f" Ошибка при обработке tariffs: {e}")
+        raise
 
 
 def process_rentals(raw_path, processed_path):
@@ -279,13 +293,14 @@ def process_rentals(raw_path, processed_path):
                 df[col] = df[col].clip(0, df['deposit_amount'])
 
 
-        df['rental_days'] = df['rental_days'].fillna(1).astype(int)
+        mask = df['rental_days'].isna() & df['rental_date'].notna() & df['scheduled_return_date'].notna()
+        df.loc[mask, 'rental_days'] = (
+            df.loc[mask, 'scheduled_return_date'] - df.loc[mask, 'rental_date']
+        ).dt.days
+
+        df['rental_days'] = df['rental_days'].fillna(1).clip(lower=1).astype(int)
         df['km_driven'] = df['km_driven'].fillna(100).astype(int)
         df['additional_km'] = df['additional_km'].fillna(0).astype(int)
-
-
-        mask = df['rental_days'].isna() & df['rental_date'].notna() & df['scheduled_return_date'].notna()
-        df.loc[mask, 'rental_days'] = (df.loc[mask, 'scheduled_return_date'] - df.loc[mask, 'rental_date']).dt.days
 
 
         mask = df['total_cost'].isna() & df['base_cost'].notna() & df['additional_km_cost'].notna()
@@ -312,6 +327,7 @@ def process_rentals(raw_path, processed_path):
 
     except Exception as e:
         logger.error(f"  ✗ Ошибка при обработке rentals: {e}")
+        raise
 
 
 def process_payments(raw_path, processed_path):
@@ -344,6 +360,7 @@ def process_payments(raw_path, processed_path):
 
     except Exception as e:
         logger.error(f"  ✗ Ошибка при обработке payments: {e}")
+        raise
 
 
 def process_car_condition(raw_path, processed_path):
@@ -365,8 +382,13 @@ def process_car_condition(raw_path, processed_path):
         df['cost'] = df['cost'].clip(0, 20000)
 
 
-        df['is_repaired'] = df['is_repaired'].map({'true': True, 'false': False})
-        df['is_repaired'] = df['is_repaired'].fillna(False).astype(bool)
+        df['is_repaired'] = (
+            df['is_repaired']
+            .map({'true': True, 'false': False})
+            .astype('boolean')
+            .fillna(False)
+            .astype(bool)
+        )
 
 
         df.loc[df['repair_date'].notna(), 'is_repaired'] = True
@@ -388,8 +410,8 @@ def process_car_condition(raw_path, processed_path):
 
     except Exception as e:
         logger.error(f"  Ошибка при обработке car_condition: {e}")
+        raise
 
 
 if __name__ == "__main__":
     process_raw_data()
-

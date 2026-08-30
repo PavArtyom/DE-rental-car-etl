@@ -45,7 +45,7 @@ CREATE TABLE gold.dim_client (
     email TEXT,
     phone TEXT,
     city TEXT,
-    status TEXT,
+    loyalty_level TEXT,
     date_of_birth DATE,
     driving_license TEXT,
     license_issue_date DATE,
@@ -134,7 +134,7 @@ SELECT
     email,
     phone,
     city,
-    'Active',
+    loyalty_level,
     date_of_birth,
     driving_license,
     license_issue_date,
@@ -204,6 +204,12 @@ CREATE TABLE gold.fact_rentals (
     base_cost DECIMAL,
     additional_km_cost DECIMAL,
     deposit_returned DECIMAL,
+    status TEXT,
+    km_driven INTEGER,
+    additional_km INTEGER,
+    scheduled_return_date DATE,
+    is_late_return BOOLEAN,
+    late_days INTEGER,
     rental_date DATE,
     actual_return_date DATE,
     duration_days INTEGER,
@@ -229,6 +235,12 @@ SELECT
     r.base_cost,
     r.additional_km_cost,
     COALESCE(r.deposit_returned, 0),
+    r.status,
+    r.km_driven,
+    r.additional_km,
+    r.scheduled_return_date,
+    r.is_late_return,
+    r.late_days,
     r.rental_date,
     r.actual_return_date,
     (r.actual_return_date - r.rental_date)::INTEGER AS duration_days,
@@ -251,6 +263,7 @@ LEFT JOIN (
         COUNT(*) AS payment_count,
         COUNT(DISTINCT payment_method) AS unique_payment_methods
     FROM silver.payments
+    WHERE status = 'Completed'
     GROUP BY rental_id
 ) payments ON r.rental_id = payments.rental_id;
 
@@ -263,8 +276,6 @@ CREATE INDEX IF NOT EXISTS idx_fact_rentals_pickup_location ON gold.fact_rentals
 CREATE INDEX IF NOT EXISTS idx_fact_rentals_return_location ON gold.fact_rentals(return_location_key);
 CREATE INDEX IF NOT EXISTS idx_fact_rentals_rental_date ON gold.fact_rentals(rental_date_key);
 CREATE INDEX IF NOT EXISTS idx_fact_rentals_actual_return ON gold.fact_rentals(actual_return_date_key);
-
-
 
 
 

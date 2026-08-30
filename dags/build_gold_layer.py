@@ -14,7 +14,7 @@ with DAG(
     dag_id='gold_layer_complete',
     default_args=default_args,
     description='Построение Gold слоя - Star Schema',
-    schedule_interval='@daily',
+    schedule_interval=None,
     start_date=datetime(2024, 1, 1),
     catchup=False,
     tags=['gold', 'star_schema', 'complete'],
@@ -24,7 +24,7 @@ with DAG(
     build_gold = SQLExecuteQueryOperator(
         task_id='build_gold_tables',
         conn_id='postgres_dwh',
-        sql='sql/gold.sql',
+        sql='sql/build_gold_layer.sql',
         split_statements=True,
         autocommit=True,
     )

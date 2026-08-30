@@ -14,6 +14,7 @@ default_args = {
 dag = DAG(
     'processed_to_silver_with_constraints',
     default_args=default_args,
+    description='Загрузка очищенных CSV-файлов в типизированный silver-слой',
     schedule_interval=None,
     catchup=False,
     tags=['car_rental', 'etl', 'silver_layer']
@@ -28,7 +29,7 @@ def load_processed_to_silver():
     parent_dir = os.path.dirname(current_dir)
     processed_data_path = os.path.join(parent_dir, 'data', 'processed')
 
-    if not os.path.exists(processed_data_path):
+    if not os.path.isdir(processed_data_path):
         logger.error(f"Папка {processed_data_path} не существует!")
         raise FileNotFoundError(f"Папка {processed_data_path} не существует!")
 

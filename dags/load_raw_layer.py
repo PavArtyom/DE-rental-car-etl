@@ -3,7 +3,6 @@ from airflow import DAG
 from airflow.operators.python import PythonOperator
 from airflow.providers.postgres.hooks.postgres import PostgresHook
 import os
-import pandas as pd
 import logging
 
 default_args = {
@@ -15,6 +14,7 @@ default_args = {
 dag = DAG(
     'csv_to_raw_layer',
     default_args=default_args,
+    description='Загрузка исходных CSV-файлов в raw-слой DWH',
     schedule_interval=None,
     catchup=False,
     tags=['car_rental', 'etl', 'raw_layer']
@@ -247,5 +247,4 @@ load_task = PythonOperator(
     python_callable=load_csv_to_postgres,
     dag=dag,
 )
-
 
